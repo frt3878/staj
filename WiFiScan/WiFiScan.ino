@@ -1,21 +1,21 @@
 #include <WiFi.h>
 
 const char * ssid = "Yesil";
-const char * password = "sste0102";
+const char * password = "sifre0102";
 
 void initWiFi() {
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);
-  Serial.print("Connecting ");
-  while (WiFi.status() != WL_CONNECTED) {
+  WiFi.mode(WIFI_STA);// wifi modu 
+  WiFi.begin(ssid, password);// ag adi ve sifre girilmesi 
+  Serial.print("Baglaniyor ");
+  while (WiFi.status() != WL_CONNECTED) { // bağlanana kadar bekleme 
     Serial.print('.');
     delay(1000);
   }
-  Serial.println(WiFi.localIP());
+  Serial.println(WiFi.localIP());// ıp adresini bastırma 
 }
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(115200); // boudrate ayarlama 
   initWiFi();
   Serial.println(WiFi.RSSI());
 }
