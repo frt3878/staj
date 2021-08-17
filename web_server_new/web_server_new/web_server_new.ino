@@ -5,7 +5,7 @@
 #include "index.h"
 
 const char* ssid = "Yesil";
-const char* password = "sste0102";
+const char* password = "password";
 
 String veri = "1";
 int16_t data[6];// okunacak veriler
