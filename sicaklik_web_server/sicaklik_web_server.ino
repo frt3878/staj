@@ -5,7 +5,7 @@
 
 // SSID & Password
 const char* ssid = "Yesil";  // wifi adi
-const char* password = "sste0102";  //wifi şifresi 
+const char* password = "password";  //wifi şifresi 
 WebServer server(80); 
 void web_server();
 void button_pressed (); 
